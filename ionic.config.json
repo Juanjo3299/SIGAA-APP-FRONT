@@ -1,0 +1,7 @@
+{
+  "name": "SIGAA-APP-FRONT",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
