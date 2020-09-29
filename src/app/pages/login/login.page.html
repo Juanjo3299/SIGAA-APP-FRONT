@@ -1,0 +1,40 @@
+<ion-content class="ion-padding">
+
+    <ion-list>
+        <ion-item>
+            <ion-img src="/assets/Logo_uptapachula_1.png"></ion-img>
+        </ion-item>
+    </ion-list>
+
+    <form #formulario="ngForm" (ngSubmit)="login()">
+        <ion-list>
+            <ion-list-header>
+                <ion-label>ALUMNOS</ion-label>
+                <ion-label>Bienvenid@ a SIGAA</ion-label>
+            </ion-list-header>
+
+            <ion-item style="border-radius: 4px;">
+                <ion-label position="floating">Usuario</ion-label>
+                <ion-input name="usuario"
+                           [(ngModel)]="usuario.usuario"
+                           size="small" required>
+                </ion-input>
+            </ion-item>
+
+            <ion-item style="border-radius: 4px;">
+                <ion-label position="floating">Contraseña</ion-label>
+                <ion-input name="password"
+                           [(ngModel)]="usuario.password"
+                           required type="password">
+                </ion-input>
+            </ion-item>
+
+        </ion-list>
+        <ion-button type="submit" [disabled]="formulario.invalid"
+                    expand="block" color="success"
+                    class="top-20" fill="solid">
+            Inciar Sesion
+        </ion-button>
+    </form>
+
+</ion-content>
